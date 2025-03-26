@@ -4,6 +4,7 @@ const examGroupRoute = require('./routes/exam-group-g');
 
 // Middleware to parse JSON
 app.use(express.json());
+//try merge with main 
 
 // Use the routes
 app.use('/', examGroupRoute);
