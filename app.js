@@ -3,10 +3,7 @@ const app = express();
 const examGroupRoute = require('./routes/exam-group-g');
 
 // Use routes for '/exam-group-g '
-app.use('/exam-group-g', examGroupRoute);
-app.use('/exams', examGroupRoute);
-
-
+app.use('/', examGroupRoute);
 //try a conflict
 
 
