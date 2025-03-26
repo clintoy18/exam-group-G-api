@@ -26,7 +26,6 @@ router.post('/exams', (req, res) => {
 router.put('/exams/:id', (req, res) => {
     const id = parseInt(req.params.id); // Get the ID from the route parameter
     const exam = exams.find(ex => ex.id === id); // Find the exam with the matching ID
-
     if (!exam) {
         // If the exam is not found, return a 404 error
         return res.status(404).json({ message: "Exam not found" });
