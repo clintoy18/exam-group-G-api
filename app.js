@@ -6,7 +6,7 @@ const examGroupRoute = require('./routes/exam-group-g');
 app.use(express.json());
 
 // Use the routes
-app.use('/exam-group-g', examGroupRoute);
+app.use('/', examGroupRoute);
 
 const PORT = 3000;
 app.listen(PORT, () => {
