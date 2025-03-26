@@ -2,9 +2,11 @@ const express = require('express');
 const app = express();
 const examGroupRoute = require('./routes/exam-group-g');
 
-// Use routes for '/exam-group-g'
+// Middleware to parse JSON
+app.use(express.json());
+
+// Use the routes
 app.use('/exam-group-g', examGroupRoute);
-app.use('/exams', examGroupRoute);
 
 const PORT = 3000;
 app.listen(PORT, () => {
